@@ -10,6 +10,7 @@ function Welcome({ onStart }) {
         if (searchQuery) {
             // Open Google search with the movie name in the query
             const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}+movie`;
+            setSearchQuery("");
             window.open(searchUrl, "_blank"); // Opens the URL in a new tab
         } else {
             console.log("Please enter a search term.");
