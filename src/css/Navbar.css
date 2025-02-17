@@ -1,0 +1,78 @@
+.navbar {
+    background-color: #1a1a1a;
+    /* Darker background for a modern look */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* More prominent shadow */
+    border-radius: 10px;
+    /* Rounded corners for a sleek look */
+    transition: background-color 0.3s ease;
+    /* Smooth background transition */
+}
+
+.navbar:hover {
+    background-color: #333333;
+    /* Slight darkening on hover */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff4757;
+    /* Adding a pop of color */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+.navbar-brand:hover {
+    color: #ff6b81;
+    /* Change color on hover for a dynamic effect */
+}
+
+.navbar-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #f1f1f1;
+    /* Lighter text color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Light background on hover */
+    color: #ff4757;
+    /* Change text color on hover for contrast */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+        border-radius: 5px;
+        /* Slightly less rounded on small screens */
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar-links {
+        gap: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}

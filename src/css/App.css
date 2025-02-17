@@ -1,0 +1,16 @@
+/* Flex container to hold the whole layout */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure the container takes at least the full height of the screen */
+}
+
+/* Content area, takes up all available space */
+.main-content {
+    flex: 1;
+    /* This ensures the content takes the remaining space, pushing footer to the bottom */
+    padding: 20px;
+    padding-bottom: 60px;
+    /* Add enough bottom padding to avoid overlap */
+}

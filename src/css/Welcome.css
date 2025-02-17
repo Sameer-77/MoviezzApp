@@ -1,0 +1,233 @@
+/* General Body and Layout Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the welcome page */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header section styling */
+.home-header {
+    margin-bottom: 2rem;
+}
+
+/* Add keyframes for logo scaling and movement */
+@keyframes moveInOut {
+    0% {
+        transform: scale(0) translateX(10%);
+        /* Start from small and off-screen right */
+    }
+
+    50% {
+        transform: scale(1) translateX(10%);
+        /* Come to original position and scale larger */
+    }
+
+    100% {
+        transform: scale(0) translateX(0%);
+        /* Move off-screen to the left while scaling down */
+    }
+}
+
+/* Logo styling: resize and make it round */
+.home-header .logo {
+    width: 145px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    animation: moveInOut 7s ease-in-out infinite;
+    /* Apply the new animation */
+}
+
+/* Title and description */
+.home-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.home-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Slogan Styling */
+.home-header .slogan {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff4757;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Styling for the search input and button */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Search Input */
+.search-container input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #ff4757;
+    border-radius: 30px;
+    width: 280px;
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Input Focus Effect */
+.search-container input:focus {
+    border-color: #e63946;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Search Button */
+.search-container button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Button Hover Effect */
+.search-container button:hover {
+    background-color: #e63946;
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Button Active Effect */
+.search-container button:active {
+    transform: translateY(0);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Section Styling */
+.about-us {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* About Us Heading */
+.about-us h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* About Us Text */
+.about-us p {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+/* Styling for the 'Get Started' button */
+.get-started-btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ff4757;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background 0.3s;
+    text-transform: uppercase;
+}
+
+/* Get Started Button Hover Effect */
+.get-started-btn:hover {
+    background-color: #e63946;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .home-header h1 {
+        font-size: 2rem;
+    }
+
+    .home-header p {
+        font-size: 1rem;
+    }
+
+    .home-header .slogan {
+        font-size: 1rem;
+    }
+
+    .search-container input {
+        width: 200px;
+    }
+
+    .get-started-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .about-us h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-header .logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .search-container input {
+        width: 150px;
+    }
+
+    .search-container button {
+        padding: 0.6rem 1.2rem;
+    }
+
+    .get-started-btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 1rem;
+    }
+}

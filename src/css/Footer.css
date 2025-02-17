@@ -1,0 +1,70 @@
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    /* Ensure footer spans the entire width */
+    position: relative;
+    /* Remove absolute positioning */
+    bottom: 0;
+    /* This is not necessary now */
+    left: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Footer content container */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* Contact Info section */
+.contact-info,
+.social-links {
+    flex: 1;
+    margin: 10px;
+}
+
+/* Styling for the list of contact info and social links */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Links Styling */
+a {
+    color: #ff4757;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #e63946;
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info,
+    .social-links {
+        margin: 10px 0;
+    }
+}
