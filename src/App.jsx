@@ -2,6 +2,7 @@ import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Welcome from "./pages/Welcome";
 import Home from "./pages/Home";
+import Favorites from "./pages/Favourites";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import { MovieProvider } from "./contexts/MovieContext";
@@ -32,7 +33,7 @@ function App() {
             {started && (
               <>
                 <Route path="/home" element={<Home />} />
-                <Route path="/favorites" element={<div>Favorites Page</div>} />
+                <Route path="/favorites" element={<Favorites />} /> {/* Updated */}
               </>
             )}
           </Routes>
