@@ -9,7 +9,7 @@ function NavBar({ started, setStarted }) {  // Accept setStarted prop
     return (
         <nav className="navbar">
             <div className="navbar-brand">
-                <Link to="/">MovizzApp</Link>
+                <Link to="/">MoviezzApp</Link>
             </div>
             <div className="navbar-links">
                 <Link
